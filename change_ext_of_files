@@ -1,0 +1,1 @@
+for i in `ls | grep -v .*.sh`; do mv "$i" "$i.sh" ; done
