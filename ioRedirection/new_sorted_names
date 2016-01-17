@@ -1,0 +1,9 @@
+# reading this file with sort < sname > sorted_names
+# with print out the contents of this file, but sorted and write over sorted_names
+##
+##
+$cat > sname
+ashish
+babu
+vivek
+zebra
