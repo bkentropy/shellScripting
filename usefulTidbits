@@ -1,0 +1,6 @@
+# changes the extension to .sh to all files in the directory that
+# do not have .sh at the end
+for i in `ls | grep -v .*.sh`; do mv "$i" "$i.sh" ; done
+
+# echos hello world but in a blue color, pretty neat
+echo -e "\033[34m   Hello Colorful  World\!"
