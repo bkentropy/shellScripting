@@ -1,0 +1,6 @@
+10
+-20
+2
+11
+# I used this file with $ sort < nos, to redirect the output of nos into sort
+# and print out the properly sorted list of numbers
