@@ -4,3 +4,6 @@ for i in `ls | grep -v .*.sh`; do mv "$i" "$i.sh" ; done
 
 # echos hello world but in a blue color, pretty neat
 echo -e "\033[34m   Hello Colorful  World\!"
+
+# cats out filename into the terminal with the edited pattern/action you supply
+sed 's/^/    /' filename
