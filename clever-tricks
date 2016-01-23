@@ -7,3 +7,6 @@ echo -e "\033[34m   Hello Colorful  World\!"
 
 # cats out filename into the terminal with the edited pattern/action you supply
 sed 's/^/    /' filename
+
+# in vim use ^o to move to an older position of vim's cursor
+# and use ^i to move to new positions (up until your last cursor position)
