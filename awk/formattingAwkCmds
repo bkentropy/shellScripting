@@ -1,0 +1,36 @@
+// This works but why?
+sudo awk 'BEGIN { FS=":"; print
+"User\t\tUID\t\tGID\t\tHome\t\tShell\n--------------"; }
+{print $1,"\t\t",$3,"\t\t",$4,"\t\t",$6,"\t\t",$7;}
+END { print "---------\nFile Complete" }' /etc/passwd
+
+// This does not work LINE 3 I FORGOT THE DAMN SHITTING QUOTE BEFORE $6
+sudo awk 'BEGIN { FS=":"; print
+"User\t\tUID\t\tGID\t\tHome\t\t\tShell\n----------------"; } 
+{ print $1,"\t\t",$3,"\t\t",$4,"\t\t\,$6,"\t\t",$7; } 
+END { print "-------------------\nFile Complete" }'  /etc/passwd
+
+// Use this like echo
+awk 'BEGIN { print "We can use awk like the echo command";}'
+
+// After this
+echo "1 carrot sandy
+2 wasabi luke
+3 sandwich brian
+4 salad ryan
+5 spaghetti jessica" > favorite_food.txt
+// Try awk '/sa/' favorite_food.txt , which returns
+1 carrot sandy
+2 wasabi luke
+3 sandwich brian
+4 salad ryan
+// Try awk '$2 ~ /^sa/' favorite_food.txt to just get fields in the second
+// column that also START with sa
+3 sandwich brian
+4 salad ryan
+// To find all the LINES that don't have the above conditions
+awk '$2 !~ /^sa/' favorite_food.txt
+1 carrot sandy
+2 wasabi luke
+5 spaghetti jessica
+
