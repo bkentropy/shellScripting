@@ -1,0 +1,14 @@
+cut -f1 filename // should cut the first field from filename
+// I find awk '{print $1}' filename works better
+
+paste file1 file2 // joins the first lines of each 
+
+join file1 file2 // combines fields that match into file column and then
+appends the other fields
+// Note that join will only work, if there is a common field in both files and
+// if values are identical to each other.
+
+// example using sname
+tr "h2" "3x" < sname
+// The first field are the characters to be replaced and 
+// the second field is the characters to translate over the first field
