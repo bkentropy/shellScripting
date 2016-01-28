@@ -12,3 +12,14 @@ appends the other fields
 tr "h2" "3x" < sname
 // The first field are the characters to be replaced and 
 // the second field is the characters to translate over the first field
+
+// this will only return lines (or fields?) that are unique from a thought
+uniq filename
+
+// this will only return lines (or fields) and they will be sorted
+sort filename
+
+// will return all of the "strings" that matchs the given pattern from filename
+grep 'pattern' filename
+
+

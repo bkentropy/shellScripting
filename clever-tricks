@@ -9,4 +9,7 @@ echo -e "\033[34m   Hello Colorful  World\!"
 sed 's/^/    /' filename
 
 # in vim use ^o to move to an older position of vim's cursor
-# and use ^i to move to new positions (up until your last cursor position)
+# and use ^i to move to new positions (up until your last cursor position)  
+
+# Searching in all files recursively using grep -r
+grep -r "pattern" *

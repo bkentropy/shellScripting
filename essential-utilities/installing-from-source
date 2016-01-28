@@ -1,0 +1,10 @@
+First, install the Xcode command line tools by running xcode-select --install
+
+curl -O ftp://mama.indstate.edu/linux/tree/tree-1.5.3.tgz
+tar xzvf tree-1.5.3.tgz
+cd tree-1.5.3.tgz
+ls -al
+
+then, sudo make install
+
+after untarring, cp the tree binary file to /usr/local/bin/tree
